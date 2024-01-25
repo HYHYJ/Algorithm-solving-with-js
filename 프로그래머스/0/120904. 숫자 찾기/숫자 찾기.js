@@ -2,8 +2,6 @@
 
 
 function solution(num, k) {
-    let stringK = String(k)
-    let value =  String(num).split('')
-    value = value.indexOf(stringK)
+    let value =  String(num).split('').indexOf(String(k)) 
     return value >= 0 ? value +1 : -1 
 }
