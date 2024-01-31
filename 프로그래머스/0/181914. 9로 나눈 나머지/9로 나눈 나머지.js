@@ -1,5 +1,5 @@
 function solution(num) {
-    let ans = 0
-    let dd = [...num].map((i)=>+i).map((i)=> ans += i)  
-    return ans%9
+    let answer = 0
+    let result = [...num].map((i)=> answer += (+i)) 
+    return answer%9
 }
