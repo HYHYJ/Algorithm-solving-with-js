@@ -1,3 +1,5 @@
 function solution(array) {
-    return array.join("").split('7').length -1
+    var answer = 0
+    array.join("").split("").map((i)=> {if(i === "7") {return answer++}})
+    return answer
 }
